@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-canvas-bg: #101211;
+  --color-canvas-subtle: #181a19;
+  --color-brand-gold: #c6a477;
+  --color-brand-gold-light: #dfcaab;
+  --color-text-primary: #f8faf3;
+  --color-text-secondary: #c4c7c4;
+  --color-text-muted: #838482;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #101211;
+  color: #f8faf3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #101211;
+  color: #f8faf3;
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for desktop */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #101211;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2d2b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c6a477;
+}
+
+/* Focus indicator conforming to WCAG 2.2 AA (3:1 contrast) */
+:focus-visible {
+  outline: 2px solid #c6a477;
+  outline-offset: 3px;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Text selection highlight */
+::selection {
+  background-color: rgba(198, 164, 119, 0.3);
+  color: #ffffff;
+}
+
+/* Fluid typography utilities */
+.text-display-hero {
+  font-size: clamp(2.5rem, 6.5vw, 5.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.text-headline-section {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.text-headline-card {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+/* Editorial subtle borders */
+.border-editorial {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+.border-gold-subtle {
+  border-color: rgba(198, 164, 119, 0.25);
+}

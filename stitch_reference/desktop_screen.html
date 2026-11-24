@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html lang="pt-PT"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary":"#755a33","surface-bright":"#f8faf3","secondary-fixed":"#ffddb3","on-tertiary-container":"#848480","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#e5c192","primary":"#000000","surface-container-high":"#e7e9e2","error":"#ba1a1a","on-primary-fixed-variant":"#454746","inverse-primary":"#c6c7c4","on-surface":"#191c18","inverse-on-surface":"#f0f2ea","surface-container-highest":"#e1e3dc","on-secondary-fixed":"#291800","on-tertiary-fixed":"#1b1c19","on-background":"#191c18","tertiary":"#000000","tertiary-container":"#1b1c19","secondary-container":"#fdd7a6","surface-variant":"#e1e3dc","tertiary-fixed-dim":"#c8c6c2","on-primary-container":"#838482","on-primary-fixed":"#1a1c1b","primary-fixed":"#e2e3e0","outline":"#747875","surface":"#f8faf3","on-error-container":"#93000a","surface-tint":"#5d5f5d","surface-dim":"#d9dbd4","on-primary":"#ffffff","inverse-surface":"#2e312c","error-container":"#ffdad6","on-surface-variant":"#444845","surface-container":"#edefe7","on-error":"#ffffff","background":"#f8faf3","on-secondary-container":"#785c35","primary-container":"#1a1c1b","on-tertiary":"#ffffff","on-secondary-fixed-variant":"#5b421e","tertiary-fixed":"#e4e2dd","outline-variant":"#c4c7c4","primary-fixed-dim":"#c6c7c4","surface-container-low":"#f2f4ed","on-tertiary-fixed-variant":"#474744","on-secondary":"#ffffff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin":"2rem","space-xl":"4rem","space-md":"1rem","space-xs":"0.25rem","space-lg":"2rem","space-sm":"0.5rem","gutter":"1.5rem"},fontFamily:{"title-lg":["Manrope"],"body-md":["Inter"],"headline-md":["Manrope"],"body-sm":["Inter"],"label-lg":["Inter"],"display-xl":["Manrope"],"body-lg":["Inter"],"display-xl-mobile":["Manrope"],"label-sm":["Inter"],"headline-sm":["Manrope"],"headline-lg-mobile":["Manrope"],"headline-lg":["Manrope"]},fontSize:{"title-lg":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-md":["16px",{lineHeight:"26px",letterSpacing:"0em",fontWeight:"400"}],"headline-md":["32px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-sm":["14px",{lineHeight:"22px",letterSpacing:"0.005em",fontWeight:"400"}],"label-lg":["13px",{lineHeight:"18px",letterSpacing:"0.08em",fontWeight:"500"}],"display-xl":["72px",{lineHeight:"76px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],"display-xl-mobile":["40px",{lineHeight:"44px",letterSpacing:"-0.025em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"16px",letterSpacing:"0.12em",fontWeight:"600"}],"headline-sm":["24px",{lineHeight:"30px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg-mobile":["32px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg":["48px",{lineHeight:"54px",letterSpacing:"-0.025em",fontWeight:"600"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased" data-lenis="smooth-scroll"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 transition-all duration-300" data-gsap="nav-scroll"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><a class="flex flex-col leading-none" data-path="inicio" href="#"><span class="font-title-lg text-title-lg tracking-tight uppercase text-on-surface font-bold">BRASPORTO</span><span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest">Reparos e Remodelações</span></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-on-surface font-semibold"><a aria-current="page" class="uppercase transition-colors text-on-surface font-semibold" data-path="inicio" href="#">Início</a><a class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="sobre-nos" href="#sobre-nos">Sobre nós</a><a class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="servicos" href="#servicos">Serviços</a><a class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="projetos" href="#projetos">Projetos</a><a class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="avaliacoes" href="#avaliacoes">Avaliações</a><a class="font-label-lg text-label-lg uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="contactos" href="#contactos">Contactos</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center px-space-lg py-space-sm bg-[#C6A477] text-[#101211] font-label-lg text-label-lg font-semibold uppercase tracking-wider hover:bg-[#d5b78e] transition-colors" data-path="contactos" href="#contactos">PEDIR ORÇAMENTO ↗</a><div class="w-8 h-8 rounded-full bg-[#101211] flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- 1. FULLSCREEN CINEMATIC HERO -->
+<section class="relative w-full min-h-[100svh] -mt-20 pt-20 flex flex-col justify-between bg-[#101211] text-on-primary overflow-hidden" data-gsap="hero-section">
+<div class="absolute inset-0 bg-cover bg-center scale-105 transition-transform duration-1000" data-alt="Contemporary renovated architectural apartment interior in Porto, featuring warm natural oak flooring, exposed restored limestone wall, minimalist matte black kitchen island, soft warm recessed lighting, and floor-to-ceiling windows overlooking historic rooftops at golden hour, editorial architectural photography" data-gsap="hero-bg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2ytWh5yVCRgARZAHKg8dEP8Bm2DmgxfoD_fDK_qQq47k8EX_TOFe5p_YG6pvXcMWZSEJx-0EtXy_bXeZ8SrBSkhQlvXk5-8i6yiGEMc_N1ytX2ZNYnAitjc8YMXLSPeEhWi3nlvOQu3PfHE0Z7fCC0PpRZ4OGz8wuazUPQrxD8ELtq3HnzBlanil70SBDIcy9HD7G3o0XfqLGoYLwctjmcZfwqXkjwQuMEiv_EaE')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#101211] via-[#101211]/70 to-[#101211]/35"></div>
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,transparent_25%,rgba(16,18,17,0.72)_100%)]"></div>
+<div class="relative z-10 max-w-7xl mx-auto w-full px-margin flex-1 flex flex-col justify-end pb-12 lg:pb-16 pt-space-xl">
+<div class="max-w-4xl space-y-6">
+<p class="font-label-sm text-label-sm uppercase text-[#C6A477] tracking-[0.2em]" data-gsap="hero-kicker">
+          REPARAÇÕES E REMODELAÇÕES · PORTO
+        </p>
+<h1 class="font-display-xl text-[46px] sm:text-[64px] lg:text-[84px] leading-[0.98] tracking-[-0.035em] font-bold text-on-primary" data-gsap="hero-title">
+          Transformamos espaços. Construímos confiança.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-primary/85 max-w-2xl" data-gsap="hero-subtitle">
+          Soluções de remodelação e reparação que valorizam o seu espaço, com atenção a cada detalhe.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm" data-gsap="hero-cta">
+<a class="inline-flex items-center gap-space-sm px-8 py-4 bg-[#C6A477] text-[#101211] font-label-lg text-label-lg font-semibold uppercase tracking-wider hover:bg-[#d5b78e] transition-colors shadow-lg" href="#contactos">
+            PEDIR ORÇAMENTO
+            <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-8 py-4 border border-on-primary/30 bg-on-primary/10 backdrop-blur-md text-on-primary font-label-lg text-label-lg uppercase tracking-wider hover:bg-on-primary/20 transition-colors" href="#servicos">
+            Explorar serviços
+          </a>
+</div>
+<div class="pt-space-md flex items-center gap-space-sm text-on-primary/85">
+<div class="flex items-center text-[#C6A477]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-body-sm text-body-sm">4,9/5 — 30 avaliações no Google</span>
+</div>
+</div>
+<div class="mt-10 pt-6 border-t border-white/15 flex items-center justify-between" data-gsap="hero-scroll">
+<a class="inline-flex items-center gap-space-sm font-label-sm text-label-sm uppercase text-on-primary/75 hover:text-on-primary transition-colors" href="#confianca">
+<span class="material-symbols-outlined text-[18px] animate-bounce">south</span>
+          Descer para explorar
+        </a>
+<span class="hidden md:block font-label-sm text-label-sm uppercase text-on-primary/55 tracking-widest">
+          PORTO · PORTUGAL
+        </span>
+</div>
+</div>
+</section>
+<!-- 2. TRUST STRIP -->
+<section class="w-full bg-surface-container-low py-space-lg border-b border-outline-variant/30" id="confianca">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="flex flex-wrap items-center justify-between gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-lg text-label-lg uppercase text-on-surface">4,9/5 no Google</span>
+</div>
+<span class="hidden sm:inline text-outline-variant">/</span>
+<div class="font-label-lg text-label-lg uppercase">30 avaliações</div>
+<span class="hidden sm:inline text-outline-variant">/</span>
+<div class="font-label-lg text-label-lg uppercase">Atendimento no Porto</div>
+<span class="hidden sm:inline text-outline-variant">/</span>
+<div class="font-label-lg text-label-lg uppercase">Atenção à qualidade e aos detalhes</div>
+</div>
+</div>
+</section>
+<!-- 3. ABOUT SECTION -->
+<section class="w-full bg-surface py-24 lg:py-36" id="sobre-nos">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-6">
+<div class="relative overflow-hidden bg-surface-container" data-gsap="image-mask">
+<img class="w-full aspect-[4/5] object-cover" data-alt="Architectural detail of a freshly renovated Porto townhouse interior, featuring warm herringbone wood parquet, custom matte bronze hardware, plastered ivory walls, and natural daylight streaming through tall wooden shutters, serene editorial composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzr3z5uIg9UR9VlRF0Sr4Ot75v38oRjJ4GO4KKMKOJt0VcQWwGow8nqFrG3VTVFJORe67a7ks7xnDbE0vSMvVlDdxNsUEGE484w5oLxt3xyIzvQMzJbJcZZnXtgNAX3Ve38iA1tlAXsLQTBje601_9v7ttxNiQNrH4vyYjvJNCbjMt7NHobPyqZ4FHxRBDHBaz1k38o44NoLEz9V2lKnVFu3oxkhXGA_btceU6JSU"/>
+</div>
+</div>
+<div class="lg:col-span-5 lg:col-start-8 space-y-space-lg">
+<p class="font-label-sm text-label-sm uppercase text-secondary tracking-widest">QUEM SOMOS</p>
+<h2 class="font-headline-lg text-[36px] lg:text-[52px] leading-[1.08] tracking-[-0.03em] text-on-surface">
+            Cada espaço merece uma nova história.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Na Brasporto, trabalhamos para transformar espaços através de soluções de reparação e remodelação adaptadas às necessidades de cada cliente. Valorizamos a qualidade do trabalho, a comunicação e o cumprimento do que é acordado.
+          </p>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-space-sm px-8 py-4 bg-[#101211] text-on-primary font-label-lg text-label-lg uppercase tracking-wider hover:bg-[#C6A477] hover:text-[#101211] transition-colors" href="#contactos">
+              Conheça a Brasporto
+              <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. SERVICES SECTION (ASYMMETRICAL ARCHITECTURAL EDITORIAL LAYOUT) -->
+<section class="w-full bg-surface-container-low py-24 lg:py-36 border-t border-outline-variant/30" id="servicos">
+<div class="max-w-7xl mx-auto px-margin space-y-16 lg:space-y-24">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-8 border-b border-outline-variant/40">
+<div class="space-y-space-sm max-w-2xl">
+<p class="font-label-sm text-label-sm uppercase text-secondary tracking-widest">SERVIÇOS</p>
+<h2 class="font-headline-lg text-[36px] lg:text-[56px] leading-[1.06] tracking-[-0.03em] text-on-surface">
+            Rigor técnico em cada especialidade.
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Intervenções completas ou pontuais com execução cuidada e acompanhamento próximo no Porto.
+        </p>
+</div>
+<!-- Staggered 12-column Architectural Rows -->
+<div class="space-y-16 lg:space-y-24">
+<!-- Row 1: 01 (7 cols) + 02 (5 cols, offset) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<a class="group lg:col-span-7 block" data-gsap="service-row" href="#contactos">
+<div class="overflow-hidden aspect-[16/10] bg-surface-container mb-5" data-gsap="image-mask">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Full home renovation in a classic Porto apartment, showing clean white plaster walls, restored crown molding, warm oak flooring, and minimalist architectural lighting, bright daylight, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjDhzcZ3wsAtFDYBSg9lEoZpus0nZF6fuQCA65h9b8fLP_s2YN7PvIfsBB98tSodlPAWHXQimGYK8Lkr9P7HRGq-nTJhiaVh9oRXMU0140HAlomluGsIxEiJflKPl-6pHt7h5_aTs1Bu5DU1y2iZeXPj0l7qR0CkRaoMrQa0Hab6BXKWSf3uLTp8ppAzxwahEI-yYmbJsVgSysn0z8CZA5-yANKWiUxJI_Yuv7gOk"/>
+</div>
+<div class="flex items-baseline justify-between pt-4 border-t border-outline-variant/50">
+<div class="flex items-baseline gap-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase">01</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Remodelações</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">arrow_outward</span>
+</div>
+</a>
+<a class="group lg:col-span-5 lg:mt-20 block" data-gsap="service-row" href="#contactos">
+<div class="overflow-hidden aspect-[4/5] bg-surface-container mb-5" data-gsap="image-mask">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Precision interior wall painting in warm ivory matte finish, crisp architectural corners, natural sunlight casting soft shadows across textured plaster, minimalist luxury interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvdnyG1hcuGB2iHtUJwHt1INtQGDQv741LtXeoyXlaTGpV7DeluGiSterxJfF2Z9_WheEBVODDna_J2a3_C7FhvV2Nov-ms9nW9pTGQyLByqWkhI0_zQ255hkTo33y_jQbVQQyw9r4lEl41JOT5DK2vKXBCT3tWbCnp-8UKEredNVb7HYupmPsIPqi_-acsHNlL04nJiyBc7w72Kt8u93b_EJLDbmZp-PXAVborp8"/>
+</div>
+<div class="flex items-baseline justify-between pt-4 border-t border-outline-variant/50">
+<div class="flex items-baseline gap-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase">02</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Pintura</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">arrow_outward</span>
+</div>
+</a>
+</div>
+<!-- Row 2: 03 (5 cols, offset) + 04 (7 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<a class="group lg:col-span-5 lg:mt-16 block" data-gsap="service-row" href="#contactos">
+<div class="overflow-hidden aspect-[4/5] bg-surface-container mb-5" data-gsap="image-mask">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Bespoke kitchen remodel with natural stone countertop, warm walnut cabinetry, brushed bronze faucet, and integrated minimalist lighting in a contemporary Porto home" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPF1LK7VUjJAyCaTj-SC-DOdLV0kJN-Kzrx-fMExY4ILWuCEZp-hAkbUZN6eTeX2EVD-A84px03ZALIcrCQ2o8mI_OBVZwBokX0xTFxHS77jxxZiqqecJbM6K9nccC1WG9kUbrd4PG5RQ_sWkgKNFWQC6yqs4G8ku2nIUiM8E8UAo_pEGsJU8zByU7PqMgI9gEyxq5eDTPx88luLTuB1KJQwMijwuc66LoierxTck"/>
+</div>
+<div class="flex items-baseline justify-between pt-4 border-t border-outline-variant/50">
+<div class="flex items-baseline gap-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase">03</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Remodelação de cozinhas</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">arrow_outward</span>
+</div>
+</a>
+<a class="group lg:col-span-7 block" data-gsap="service-row" href="#contactos">
+<div class="overflow-hidden aspect-[16/10] bg-surface-container mb-5" data-gsap="image-mask">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern bathroom plumbing and fixtures installation, brushed brass wall-mounted tap over travertine stone basin, clean architectural lines, warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJPoi4xNTrylMhvRTNpOUqdcR3FBiSw-EWfLbuEEs8pxATKT7X7D9v9V6RwIE8Er3MqSvyCQLmaJGcMvBpNnjLEZLIlVtXMV5qshhQLW2n7J_thgQygnq0U-AGHwXdPM-2ExExCTqBpCnmCn6qstXZcjMV7EXP4ehHC6n0mC7WW_vpUIYfRoGUInaHt-uT6SQjWYl13Vy1w2nSHGaQo3HcxBbIqj4tbyLh0xJb09I"/>
+</div>
+<div class="flex items-baseline justify-between pt-4 border-t border-outline-variant/50">
+<div class="flex items-baseline gap-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase">04</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Canalização</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">arrow_outward</span>
+</div>
+</a>
+</div>
+<!-- Row 3: 05 (6 cols) + 06 (6 cols, offset) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<a class="group lg:col-span-6 block" data-gsap="service-row" href="#contactos">
+<div class="overflow-hidden aspect-[4/3] bg-surface-container mb-5" data-gsap="image-mask">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Architectural lighting and electrical installation, recessed linear LED ceiling details and minimalist matte black switches on warm plaster wall, evening ambiance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIjWRwHEU07fMKBuy1BRQyFE8p9tT_UiwfcegqRabZoBthaui7NU8jgJDHhUbXTOU0P6WsS4WMzYoWuSgYOq1v43hY_aF8ZWRvljgv-NdzsH4c_8cJ4-ijWapah-0yecPITWA6Ver9BJBGe5V8DNx0htn4zMcAmZk6itPeDV1GZbpMUpKYByhtdD7ddaS2acaU5UH_4n4iBksjmHbkNS-rBjPb2sg5rFDJ8jq8oyw"/>
+</div>
+<div class="flex items-baseline justify-between pt-4 border-t border-outline-variant/50">
+<div class="flex items-baseline gap-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase">05</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Eletricidade</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">arrow_outward</span>
+</div>
+</a>
+<a class="group lg:col-span-6 lg:mt-16 block" data-gsap="service-row" href="#contactos">
+<div class="overflow-hidden aspect-[4/3] bg-surface-container mb-5" data-gsap="image-mask">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Craftsman finishing wood joinery and general architectural repairs in a sunlit Porto residence, clean workspace, natural materials and precision tools" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF0rUNLHvLswhQI-WPkmkiWTu4m2HoxVphI55U7gma-OtHBx1cKzVGdyKMnkYo-C1YntlxVzZQsBTHtDpubLDWQudJyFpzZP51YQUBh3-S7VF7TD_VIW7N146w-N0bZvSNQnHkShgpyUoyehmUcvOruQERN3ol9hHt5j225IJXXokIOBgdwalHltWToSkFOWYTJu92XxOwvz89DaDH8dFwKYE7zVRdg3h0uGZr-0I"/>
+</div>
+<div class="flex items-baseline justify-between pt-4 border-t border-outline-variant/50">
+<div class="flex items-baseline gap-4">
+<span class="font-label-sm text-label-sm text-secondary uppercase">06</span>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-secondary transition-colors">Reparações gerais</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all">arrow_outward</span>
+</div>
+</a>
+</div>
+</div>
+<div class="pt-space-md flex justify-center">
+<a class="inline-flex items-center gap-space-sm px-10 py-4 bg-[#101211] text-on-primary font-label-lg text-label-lg font-semibold uppercase tracking-wider hover:bg-[#C6A477] hover:text-[#101211] transition-colors shadow-sm" href="#contactos">
+          Pedir orçamento personalizado
+          <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. PINNED HORIZONTAL SCROLLING PROJECT GALLERY -->
+<section class="w-full bg-[#101211] text-on-primary py-24 lg:py-36 overflow-hidden border-t border-white/10" data-gsap="pinned-horizontal-section" id="projetos">
+<div class="max-w-7xl mx-auto px-margin space-y-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-8 border-b border-white/15">
+<div class="space-y-space-sm">
+<p class="font-label-sm text-label-sm uppercase text-[#C6A477] tracking-widest">PORTFÓLIO</p>
+<h2 class="font-headline-lg text-[36px] lg:text-[56px] leading-[1.06] tracking-[-0.03em] text-on-primary">
+            Espaços que ganham uma nova vida.
+          </h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase text-on-primary-container">
+          Imagens ilustrativas
+        </span>
+</div>
+<div class="flex gap-8 overflow-x-auto pb-space-md snap-x snap-mandatory" data-gsap="horizontal-track">
+<!-- Project 1 -->
+<article class="min-w-[88vw] md:min-w-[62vw] lg:min-w-[54vw] snap-start bg-[#171918] p-space-md space-y-space-md border border-white/10">
+<div class="aspect-[16/9] overflow-hidden bg-primary">
+<img class="w-full h-full object-cover" data-alt="Renovated open-plan living room and kitchen in Cedofeita Porto, warm oak cabinetry, natural limestone island, soft architectural lighting, editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUOstt0sBaZMQa1D4sT9ahKWQKy9-zHWx-i_S_dFOuY5Xf2F2fMF246med5fAOT2SVKqbssZsH9xdUZREJb2EudYqfaUDhQhpv8wKAF_qXic17Sp9rSV644gO2D53gpihrs71fte02wnEcTYpaNSLkDD5bf0uVvCJIirwcPDe_pUybUmh3Lm-sujLie4kWl7UW3s-45NSwCPiu0U_vptDCySRgWX46ddd7ey0bQfM"/>
+</div>
+<div class="flex items-start justify-between gap-space-md pt-2">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-[#C6A477]">Remodelação de cozinhas</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Apartamento Cedofeita</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+                Reconfiguração completa de cozinha e zona social com mobiliário por medida.
+              </p>
+</div>
+<a aria-label="Pedir informação sobre Apartamento Cedofeita" class="shrink-0 p-space-sm bg-on-primary/10 text-on-primary hover:bg-[#C6A477] hover:text-[#101211] transition-colors" href="#contactos">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</a>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="min-w-[88vw] md:min-w-[62vw] lg:min-w-[54vw] snap-start bg-[#171918] p-space-md space-y-space-md border border-white/10">
+<div class="aspect-[16/9] overflow-hidden bg-primary">
+<img class="w-full h-full object-cover" data-alt="Restored historic townhouse interior in Foz do Douro, tall windows, minimalist ivory walls, warm timber floors, serene architectural atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgq87j9q27z-zJUyTB64JAx_IGvSMTiUe7BObguQyBUK7BMI2l_zABMcSsVLrJ9dmb5o970DPpBbjjJvHf8iso9JXBMpD4RkbgvcIxBaQ8UBoT2588WPLtK3z5XU-mszUyXRX3cid9AwcUdvziygxAN5iIFXDlv0hmj_N7gNqApcedIE-z7scCH3MS8Nx81ER0RCT6RayAQ6YvEQ1FT0vcZ7crwWEAtGqX6Nt6gVk"/>
+</div>
+<div class="flex items-start justify-between gap-space-md pt-2">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-[#C6A477]">Remodelações · Pintura</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Moradia Foz do Douro</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+                Renovação integral de interiores, pintura geral e atualização elétrica.
+              </p>
+</div>
+<a aria-label="Pedir informação sobre Moradia Foz do Douro" class="shrink-0 p-space-sm bg-on-primary/10 text-on-primary hover:bg-[#C6A477] hover:text-[#101211] transition-colors" href="#contactos">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</a>
+</div>
+</article>
+<!-- Project 3 -->
+<article class="min-w-[88vw] md:min-w-[62vw] lg:min-w-[54vw] snap-start bg-[#171918] p-space-md space-y-space-md border border-white/10">
+<div class="aspect-[16/9] overflow-hidden bg-primary">
+<img class="w-full h-full object-cover" data-alt="Contemporary bathroom suite renovation in Boavista Porto, travertine stone surfaces, brushed bronze fixtures, walk-in glass shower, warm ambient glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOnyUWY8X4swdkM-SGAJSozfjK4Qhplwx3Tp1hHDBmBT7F__9DHiOCn8ZZ21K7ew50b3t6P-WeggsVhHa-TKBzbRMlKYhew6NYxXKtBEoRNMEJ0zwDht317IhPuPZE5nefwAeF1kcc91tCWmIoSQpEO3Brklfni_hgdflYVMw7MKqj9FwVAoOJdWuIRjxPZbHJiNxMb8SYQ_jF385jo3ay_ogC4_GgkjygwoMnVfo"/>
+</div>
+<div class="flex items-start justify-between gap-space-md pt-2">
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-[#C6A477]">Canalização · Eletricidade</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Suíte Boavista</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+                Substituição de redes técnicas, revestimentos em pedra natural e iluminação.
+              </p>
+</div>
+<a aria-label="Pedir informação sobre Suíte Boavista" class="shrink-0 p-space-sm bg-on-primary/10 text-on-primary hover:bg-[#C6A477] hover:text-[#101211] transition-colors" href="#contactos">
+<span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 6. BEFORE AND AFTER SECTION -->
+<section class="w-full bg-surface py-24 lg:py-36 border-t border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-sm">
+<p class="font-label-sm text-label-sm uppercase text-secondary tracking-widest">TRANSFORMAÇÃO</p>
+<h2 class="font-headline-lg text-[36px] lg:text-[52px] leading-[1.08] tracking-[-0.03em] text-on-surface">
+            A diferença está nos detalhes.
+          </h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">
+          Imagens ilustrativas de demonstração
+        </span>
+</div>
+<div class="relative w-full aspect-[16/9] max-h-[600px] overflow-hidden bg-surface-container border border-outline-variant/40 select-none" id="ba-container">
+<!-- After Image (Base) -->
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="After renovation: bright contemporary kitchen in Porto with matte ivory cabinetry, warm oak island, stone backsplash, and recessed warm lighting, matching perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkWNdu8R6vs8yOb4QhVQeojbJ6EAJhM0FW4kUX3RORZbTRX9dkGBBdbUnmlKmd2JNRo0OR85sIg06shTSo3ZPB0pd30vru3DApK2Gd3TO6J5slNXUYKkcFwO-uf3Mif7VlhQqvLDYCGMarQ4WqoexA9LbpnpQmz5fiABAzEJBRllTZSTR7aLflN7WMluL8qdXU2X6qIHiR-w-18HsYqeehHb0oWVR6bhsUeROixjA"/>
+<span class="absolute top-space-md right-space-md z-10 px-space-md py-space-xs bg-[#101211]/85 text-[#F5F3EE] font-label-sm text-label-sm uppercase tracking-wider">
+          Depois
+        </span>
+<!-- Before Image (Clipped) -->
+<div class="absolute inset-0 overflow-hidden" id="ba-before" style="clip-path: inset(0 50% 0 0);">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Before renovation: dated dark kitchen in Porto with worn ceramic tiles, old wooden cabinets, and dim fluorescent lighting, exact same camera angle and perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6NtGXqAeZaCghayXWbG_mw94siNkQtt1FTIlx036ZPh2vf4lMOMnOPWyjh8P6UFgj6kbrjCzGdsson2lIofJrIwhcggcLF7lHFbz_fCIwtN4EWyF6FlfLjUhtY-EC3HHhfQrNPb6Ptd4LGE66uTFX4YAYwLp_Zd_-NgguabVO41UxZKDAbN9nPK7s05OCpTju3OB6u5IaWF91DyhbEoBDj_9gaP4LLzz3SoCEV38"/>
+<span class="absolute top-space-md left-space-md z-10 px-space-md py-space-xs bg-[#F5F3EE]/95 text-[#101211] font-label-sm text-label-sm uppercase tracking-wider">
+            Antes
+          </span>
+</div>
+<!-- Divider Handle -->
+<div class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[2px] bg-[#F5F3EE] z-20 pointer-events-none flex items-center justify-center shadow-md" id="ba-handle">
+<div class="w-11 h-11 rounded-full bg-[#C6A477] text-[#101211] border-2 border-[#F5F3EE] shadow-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">unfold_more</span>
+</div>
+</div>
+<!-- Accessible Range Input -->
+<input aria-label="Comparar antes e depois da remodelação" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A477]" id="ba-slider" max="100" min="0" type="range" value="50"/>
+</div>
+</div>
+</section>
+<!-- 7. WORK PROCESS SECTION -->
+<section class="w-full bg-surface-container-low py-24 lg:py-36 border-t border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-sm">
+<p class="font-label-sm text-label-sm uppercase text-secondary tracking-widest">METODOLOGIA</p>
+<h2 class="font-headline-lg text-[36px] lg:text-[52px] leading-[1.08] tracking-[-0.03em] text-on-surface">
+            Como trabalhamos.
+          </h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">
+          Processo proposto
+        </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-surface p-space-lg space-y-space-md border-t-2 border-[#C6A477]">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-secondary">01</span>
+<span class="h-0.5 flex-1 ml-space-md bg-secondary/30"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Primeiro contacto</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Ouvimos as suas ideias, objetivos e necessidades para o espaço.
+          </p>
+</div>
+<div class="bg-surface p-space-lg space-y-space-md border-t-2 border-outline-variant/50">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-secondary">02</span>
+<span class="h-0.5 flex-1 ml-space-md bg-secondary/30"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Avaliação e orçamento</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Visitamos o local no Porto e apresentamos uma proposta clara e detalhada.
+          </p>
+</div>
+<div class="bg-surface p-space-lg space-y-space-md border-t-2 border-outline-variant/50">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-secondary">03</span>
+<span class="h-0.5 flex-1 ml-space-md bg-secondary/30"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Execução dos trabalhos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Intervenção rigorosa com foco na qualidade dos acabamentos e cumprimento de prazos.
+          </p>
+</div>
+<div class="bg-surface p-space-lg space-y-space-md border-t-2 border-[#101211]">
+<div class="flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-secondary">04</span>
+<span class="h-0.5 flex-1 ml-space-md bg-secondary"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Entrega do projeto</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Verificação final conjunta para garantir a sua total satisfação.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. CUSTOMER REVIEWS -->
+<section class="w-full bg-[#101211] text-on-primary py-24 lg:py-36 border-t border-white/10" id="avaliacoes">
+<div class="max-w-7xl mx-auto px-margin space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-sm">
+<p class="font-label-sm text-label-sm uppercase text-[#C6A477] tracking-widest">AVALIAÇÕES</p>
+<h2 class="font-headline-lg text-[36px] lg:text-[52px] leading-[1.08] tracking-[-0.03em] text-on-primary">
+            4,9/5 — 30 avaliações
+          </h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<button aria-label="Avaliação anterior" class="p-space-sm bg-on-primary/10 text-on-primary hover:bg-[#C6A477] hover:text-[#101211] transition-colors" id="rev-prev" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<button aria-label="Próxima avaliação" class="p-space-sm bg-on-primary/10 text-on-primary hover:bg-[#C6A477] hover:text-[#101211] transition-colors" id="rev-next" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter" id="rev-track">
+<article class="rev-card bg-[#171918] border border-white/10 p-space-lg flex flex-col justify-between space-y-space-lg">
+<div class="space-y-space-md">
+<div class="flex text-[#C6A477]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-primary">
+              “O João manda muito bem! Tudo o que foi acordado foi cumprido. Ele nos ajudou a remodelar a cozinha. Nós recomendamos.”
+            </p>
+</div>
+<p class="font-label-lg text-label-lg uppercase text-[#C6A477]">Gabriel Ribeiro</p>
+</article>
+<article class="rev-card bg-[#171918] border border-white/10 p-space-lg flex flex-col justify-between space-y-space-lg">
+<div class="space-y-space-md">
+<div class="flex text-[#C6A477]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-primary">
+              “Excelente trabalho, a entrega foi no prazo e exatamente como o combinado. O preço é justo e o serviço impecável! Super recomendo a Brasporto.”
+            </p>
+</div>
+<p class="font-label-lg text-label-lg uppercase text-[#C6A477]">Kamilla Wild</p>
+</article>
+<article class="rev-card bg-[#171918] border border-white/10 p-space-lg flex flex-col justify-between space-y-space-lg">
+<div class="space-y-space-md">
+<div class="flex text-[#C6A477]">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-primary">
+              “Extremamente satisfeito com os serviços prestados (pichelaria, electricidade).”
+            </p>
+</div>
+<p class="font-label-lg text-label-lg uppercase text-[#C6A477]">Sam Sugo</p>
+</article>
+</div>
+<div class="flex justify-start">
+<a class="inline-flex items-center gap-space-sm font-label-lg text-label-lg uppercase text-[#C6A477] hover:text-on-primary transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=BRASPORTO+Reparos+e+Remodela%C3%A7%C3%B5es+Porto" rel="noopener noreferrer" target="_blank">
+          Ver mais avaliações no Google
+          <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 9. FAQ SECTION -->
+<section class="w-full bg-surface py-24 lg:py-36 border-t border-outline-variant/30">
+<div class="max-w-4xl mx-auto px-margin space-y-space-xl">
+<div class="space-y-space-sm">
+<p class="font-label-sm text-label-sm uppercase text-secondary tracking-widest">PERGUNTAS FREQUENTES</p>
+<h2 class="font-headline-lg text-[36px] lg:text-[52px] leading-[1.08] tracking-[-0.03em] text-on-surface">
+          Esclareça as suas dúvidas.
+        </h2>
+</div>
+<div class="space-y-space-sm" id="faq-accordion">
+<div class="bg-surface-container-low">
+<button aria-expanded="false" class="faq-trigger w-full px-space-lg py-space-md flex items-center justify-between text-left" type="button">
+<span class="font-title-lg text-title-lg text-on-surface">Como posso pedir um orçamento?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">add</span>
+</button>
+<div class="faq-panel hidden px-space-lg pb-space-md font-body-md text-body-md text-on-surface-variant">
+            Pode solicitar um orçamento através do formulário nesta página ou ligando diretamente para o +351 934 053 064. Agendamos uma visita ao local no Porto para avaliar os trabalhos necessários.
+          </div>
+</div>
+<div class="bg-surface-container-low">
+<button aria-expanded="false" class="faq-trigger w-full px-space-lg py-space-md flex items-center justify-between text-left" type="button">
+<span class="font-title-lg text-title-lg text-on-surface">Que tipos de serviços realizam?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">add</span>
+</button>
+<div class="faq-panel hidden px-space-lg pb-space-md font-body-md text-body-md text-on-surface-variant">
+            Realizamos remodelações completas, pintura interior e exterior, remodelação de cozinhas, canalização (pichelaria), eletricidade e reparações gerais.
+          </div>
+</div>
+<div class="bg-surface-container-low">
+<button aria-expanded="false" class="faq-trigger w-full px-space-lg py-space-md flex items-center justify-between text-left" type="button">
+<span class="font-title-lg text-title-lg text-on-surface">Realizam remodelações de cozinhas?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">add</span>
+</button>
+<div class="faq-panel hidden px-space-lg pb-space-md font-body-md text-body-md text-on-surface-variant">
+            Sim. Executamos remodelações de cozinhas completas, incluindo canalização, eletricidade, revestimentos, pintura e montagem de mobiliário.
+          </div>
+</div>
+<div class="bg-surface-container-low">
+<button aria-expanded="false" class="faq-trigger w-full px-space-lg py-space-md flex items-center justify-between text-left" type="button">
+<span class="font-title-lg text-title-lg text-on-surface">Como posso contactar a Brasporto?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">add</span>
+</button>
+<div class="faq-panel hidden px-space-lg pb-space-md font-body-md text-body-md text-on-surface-variant">
+            Pode contactar-nos por telefone através do +351 934 053 064 ou preencher o formulário de contacto abaixo para receber uma resposta rápida.
+          </div>
+</div>
+<div class="bg-surface-container-low">
+<button aria-expanded="false" class="faq-trigger w-full px-space-lg py-space-md flex items-center justify-between text-left" type="button">
+<span class="font-title-lg text-title-lg text-on-surface">Onde está localizada a empresa?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">add</span>
+</button>
+<div class="faq-panel hidden px-space-lg pb-space-md font-body-md text-body-md text-on-surface-variant">
+            Estamos localizados na R. de Alves Redol 402, 4050-042 Porto, Portugal, com atendimento em toda a cidade do Porto e arredores.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. CONTACT & CONVERSION SECTION -->
+<section class="w-full bg-surface-container-low py-24 lg:py-36 border-t border-outline-variant/30" id="contactos">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left: Info & Map -->
+<div class="lg:col-span-5 space-y-space-lg">
+<div class="space-y-space-sm">
+<p class="font-label-sm text-label-sm uppercase text-secondary tracking-widest">CONTACTOS</p>
+<h2 class="font-headline-lg text-[36px] lg:text-[48px] leading-[1.08] tracking-[-0.03em] text-on-surface">
+              Vamos transformar o seu espaço?
+            </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+              Conte-nos o que pretende renovar. Estamos disponíveis para conhecer o seu projeto.
+            </p>
+</div>
+<div class="space-y-space-md pt-space-sm">
+<div class="bg-surface p-space-md">
+<span class="font-label-sm text-label-sm uppercase text-secondary block">Telefone</span>
+<a class="font-title-lg text-title-lg text-on-surface hover:text-secondary transition-colors" href="tel:+351934053064">
+                +351 934 053 064
+              </a>
+</div>
+<div class="bg-surface p-space-md">
+<span class="font-label-sm text-label-sm uppercase text-secondary block">WhatsApp</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Disponível mediante contacto telefónico (sujeito a confirmação)
+              </p>
+</div>
+<div class="bg-surface p-space-md">
+<span class="font-label-sm text-label-sm uppercase text-secondary block">Morada</span>
+<p class="font-body-md text-body-md text-on-surface">
+                R. de Alves Redol 402, 4050-042 Porto, Portugal
+              </p>
+</div>
+</div>
+<div class="w-full h-56 bg-cover bg-center bg-surface-container" data-location="R. de Alves Redol 402, 4050-042 Porto, Portugal" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCzEodSVUjRkqHK_RmSuvvsDuvjTTMiR_Tz-PFUZljXaI-pY_D4-Lw5CNe8Wum6u8cu4aS_pci_UzJwGtyN1gqvJBz7Eey5YHX-XXInIpLaY-ITy68dZ6TSrDxiLFQMkwZiiTWpn1a9G8cF6DMsByYf8cB2YY_hdf3oSLvhllCj7xvhXLMf-VWWCpuxlB3-EBFzi1MvYqA39NmQWE9s7x599i8D_Xr3Vi-W0WBTgeE')"></div>
+</div>
+<!-- Right: Form -->
+<div class="lg:col-span-7 bg-surface p-space-lg lg:p-space-xl shadow-sm">
+<form class="space-y-space-lg" id="quote-form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div>
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant block mb-space-xs" for="nome">Nome</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-colors" id="nome" name="nome" placeholder="O seu nome completo" required="" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant block mb-space-xs" for="telefone">Telefone</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-colors" id="telefone" name="telefone" placeholder="+351 900 000 000" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div>
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant block mb-space-xs" for="email">Email</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-colors" id="email" name="email" placeholder="nome@exemplo.pt" required="" type="email"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant block mb-space-xs" for="servico">Tipo de serviço</label>
+<select class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-colors" id="servico" name="servico">
+<option value="Remodelações">Remodelações</option>
+<option value="Pintura">Pintura</option>
+<option value="Remodelação de cozinhas">Remodelação de cozinhas</option>
+<option value="Canalização">Canalização</option>
+<option value="Eletricidade">Eletricidade</option>
+<option value="Reparações gerais">Reparações gerais</option>
+</select>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant block mb-space-xs" for="localizacao">Localização do projeto</label>
+<input class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-colors" id="localizacao" name="localizacao" placeholder="Ex.: Cedofeita, Porto" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase text-on-surface-variant block mb-space-xs" for="descricao">Descrição do projeto</label>
+<textarea class="w-full bg-surface-container-low px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container transition-colors" id="descricao" name="descricao" placeholder="Descreva brevemente o que pretende renovar ou reparar..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-start gap-space-sm">
+<input class="mt-1 w-4 h-4 accent-[#101211]" id="privacidade" name="privacidade" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant" for="privacidade">
+                Concordo com o tratamento dos meus dados pessoais para resposta ao pedido de orçamento, nos termos da Política de Privacidade.
+              </label>
+</div>
+<div class="flex items-center justify-between gap-space-md">
+<button class="inline-flex items-center gap-space-sm px-10 py-4 bg-[#101211] text-on-primary font-label-lg text-label-lg font-semibold uppercase tracking-wider hover:bg-[#C6A477] hover:text-[#101211] transition-colors shadow-sm" type="submit">
+                Solicitar orçamento
+                <span class="material-symbols-outlined text-[18px]">arrow_outward</span>
+</button>
+<span class="hidden font-body-sm text-body-sm text-secondary" id="form-feedback">
+                Pedido registado. Entraremos em contacto brevemente.
+              </span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Discreet Floating Contact Button -->
+<a aria-label="Contactar Brasporto" class="fixed bottom-6 right-6 z-40 inline-flex items-center gap-space-sm px-space-md py-space-sm bg-[#101211] text-on-primary shadow-xl hover:bg-[#C6A477] hover:text-[#101211] transition-colors" href="#contactos">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="hidden sm:inline font-label-sm text-label-sm uppercase">Orçamento</span>
+</a>
+</div>
+<script>
+  (function () {
+    // Before/After Slider
+    const slider = document.getElementById('ba-slider');
+    const beforeLayer = document.getElementById('ba-before');
+    const handle = document.getElementById('ba-handle');
+    if (slider && beforeLayer && handle) {
+      const updateSlider = (val) => {
+        beforeLayer.style.clipPath = `inset(0 ${100 - val}% 0 0)`;
+        handle.style.left = `${val}%`;
+      };
+      slider.addEventListener('input', (e) => updateSlider(e.target.value));
+    }
+
+    // Reviews Carousel (subtle reorder/highlight on mobile & desktop)
+    const track = document.getElementById('rev-track');
+    const prevBtn = document.getElementById('rev-prev');
+    const nextBtn = document.getElementById('rev-next');
+    if (track && prevBtn && nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        if (track.firstElementChild) track.appendChild(track.firstElementChild);
+      });
+      prevBtn.addEventListener('click', () => {
+        if (track.lastElementChild) track.insertBefore(track.lastElementChild, track.firstElementChild);
+      });
+    }
+
+    // FAQ Accordion
+    const triggers = document.querySelectorAll('.faq-trigger');
+    triggers.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        const panel = btn.nextElementSibling;
+        const icon = btn.querySelector('.material-symbols-outlined');
+        btn.setAttribute('aria-expanded', String(!expanded));
+        if (panel) panel.classList.toggle('hidden', expanded);
+        if (icon) icon.textContent = expanded ? 'add' : 'remove';
+      });
+    });
+
+    // Form submission feedback
+    const form = document.getElementById('quote-form');
+    const feedback = document.getElementById('form-feedback');
+    if (form && feedback) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        feedback.classList.remove('hidden');
+        form.reset();
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-[#101211] text-on-primary py-space-xl border-t border-white/10"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg pb-space-xl"><div class="space-y-space-md"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-primary">BRASPORTO</span><span class="font-label-sm text-label-sm uppercase text-[#C6A477]">Reparos e Remodelações</span></div><p class="font-body-sm text-body-sm text-on-primary-container">Estúdio de arquitetura, restauro e remodelações de excelência no Porto. Rigor técnico, materiais nobres e execução chave-na-mão.</p></div><div><h3 class="font-label-sm text-label-sm uppercase text-[#C6A477] mb-space-md">Navegação</h3><ul class="space-y-space-sm"><li><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="inicio" href="#">Início</a></li><li><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="sobre-nos" href="#sobre-nos">Sobre nós</a></li><li><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="servicos" href="#servicos">Serviços</a></li><li><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="projetos" href="#projetos">Projetos</a></li><li><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="avaliacoes" href="#avaliacoes">Avaliações</a></li><li><a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" data-path="contactos" href="#contactos">Contactos</a></li></ul></div><div><h3 class="font-label-sm text-label-sm uppercase text-[#C6A477] mb-space-md">Serviços</h3><ul class="space-y-space-sm font-body-sm text-body-sm text-on-primary-container"><li>Remodelações</li><li>Pintura</li><li>Remodelação de cozinhas</li><li>Canalização</li><li>Eletricidade</li><li>Reparações gerais</li></ul></div><div><h3 class="font-label-sm text-label-sm uppercase text-[#C6A477] mb-space-md">Contacto</h3><div class="space-y-space-sm font-body-sm text-body-sm text-on-primary-container"><p>+351 934 053 064</p><p>R. de Alves Redol 402,<br/>4050-042 Porto, Portugal</p></div></div></div><div class="pt-space-lg border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-primary-container"><p>© 2025 BRASPORTO — Reparos e Remodelações. Todos os direitos reservados.</p><a class="hover:text-on-primary transition-colors" data-path="politica-de-privacidade" href="#">Política de Privacidade</a></div></div></footer></body></html>
