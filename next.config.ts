@@ -16,7 +16,6 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: "export",
   basePath: basePath || undefined,
-  assetPrefix: basePath ? `${basePath}/` : undefined,
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
