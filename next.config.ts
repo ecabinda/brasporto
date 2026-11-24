@@ -10,11 +10,16 @@ if (isGithubActions && process.env.GITHUB_REPOSITORY) {
   }
 }
 
+const basePath = repo ? `/${repo}` : (process.env.NEXT_PUBLIC_BASE_PATH || "");
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: "export",
-  basePath: repo ? `/${repo}` : undefined,
-  assetPrefix: repo ? `/${repo}` : undefined,
+  basePath: basePath || undefined,
+  assetPrefix: basePath ? `${basePath}/` : undefined,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     unoptimized: true,
   },

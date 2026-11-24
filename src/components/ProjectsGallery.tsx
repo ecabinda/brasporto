@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import { getAssetPath } from "@/lib/data";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -18,7 +19,7 @@ export function ProjectsGallery() {
       location: "Cedofeita, Porto",
       description:
         "Reconfiguração integral da cozinha e zona social com marcenaria por medida em carvalho nobre, ilha em pedra natural e iluminação arquitetónica discreta.",
-      image: "/images/editorial/editorial-13.png",
+      image: getAssetPath("/images/editorial/editorial-13.png"),
       alt: "Cozinha contemporânea remodelada em Cedofeita Porto",
     },
     {
@@ -28,7 +29,7 @@ export function ProjectsGallery() {
       location: "Foz do Douro, Porto",
       description:
         "Renovação integral de interiores, preservação de portadas e caixilharias de madeira, pintura premium mate em tom marfim e atualização completa de redes técnicas.",
-      image: "/images/editorial/editorial-14.png",
+      image: getAssetPath("/images/editorial/editorial-14.png"),
       alt: "Interior restaurado de moradia histórica na Foz do Douro",
     },
     {
@@ -38,7 +39,7 @@ export function ProjectsGallery() {
       location: "Boavista, Porto",
       description:
         "Substituição de redes técnicas de água e esgotos, instalação de torneiras de parede em latão escovado, revestimentos em travertino e cabine de duche italiana.",
-      image: "/images/editorial/editorial-8.png",
+      image: getAssetPath("/images/editorial/editorial-8.png"),
       alt: "Casa de banho com acabamentos em pedra travertino na Boavista Porto",
     },
     {
@@ -48,7 +49,7 @@ export function ProjectsGallery() {
       location: "Baixa, Porto",
       description:
         "Recuperação de chão em espinha de peixe original em pinho de riga, lacagem de rodapés altos e carpintarias interiores respeitando a traça portuense.",
-      image: "/images/editorial/editorial-15.png",
+      image: getAssetPath("/images/editorial/editorial-15.png"),
       alt: "Pormenor de soalho em espinha de madeira nobre restaurado no Porto",
     },
   ];

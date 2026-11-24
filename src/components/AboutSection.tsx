@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { getAssetPath } from "@/lib/data";
 import { ArrowUpRight, CheckCircle2, Award, Hammer } from "lucide-react";
 import { BUSINESS_INFO } from "@/lib/data";
 
@@ -25,7 +26,7 @@ export function AboutSection() {
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-[#161817]">
               <Image
-                src="/images/real/obra-6.png"
+                src={getAssetPath("/images/real/obra-6.png")}
                 alt="Profissional qualificado da equipa Brasporto uniformizado em intervenção de cobertura no Porto"
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"

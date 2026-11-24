@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { getAssetPath } from "@/lib/data";
 import { Phone, Mail, MapPin, MessageSquare, Clock } from "lucide-react";
 import { BUSINESS_INFO } from "@/lib/data";
 import { QuoteForm } from "./QuoteForm";
@@ -129,7 +130,7 @@ export function ContactSection() {
             <div className="rounded-2xl overflow-hidden border border-white/10 bg-[#161817] p-2 shadow-xl">
               <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden">
                 <Image
-                  src="/images/real/obra-5.png"
+                  src={getAssetPath("/images/real/obra-5.png")}
                   alt="Cartão institucional oficial Brasporto Reparos e Remodelação"
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"

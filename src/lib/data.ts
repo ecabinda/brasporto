@@ -1,3 +1,11 @@
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+export function getAssetPath(path: string): string {
+  if (!path) return "";
+  if (path.startsWith("http://") || path.startsWith("https://")) return path;
+  return `${BASE_PATH}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
 export interface Service {
   id: string;
   number: string;
@@ -77,7 +85,7 @@ export const SERVICES: Service[] = [
     description:
       "Transformações integrais de apartamentos e moradias no Porto. Gestão rigorosa de prazos, acabamentos nobres e planeamento arquitetónico chave-na-mão.",
     features: ["Demolições e reconstrução de interiores", "Isolamento térmico e acústico", "Substituição integral de pavimentos", "Acompanhamento técnico permanente"],
-    image: "/images/real/obra-4.png",
+    image: getAssetPath("/images/real/obra-4.png"),
     alt: "Intervenção de remodelação de sala e zona social com chão de madeira e divisórias arquitetónicas",
   },
   {
@@ -87,7 +95,7 @@ export const SERVICES: Service[] = [
     description:
       "Preparação milimétrica de superfícies e aplicação de tintas premium de acabamento mate e aveludado, com controlo absoluto de luminosidade e durabilidade.",
     features: ["Tratamento anti-fissuras e humidades", "Acabamentos mate, acetinado e lacagens", "Pintura interior e fachadas exteriores", "Proteção minuciosa de caixilharias"],
-    image: "/images/real/obra-2.png",
+    image: getAssetPath("/images/real/obra-2.png"),
     alt: "Preparação rigorosa de paredes e pavimento de apartamento para aplicação de pintura de alta qualidade",
   },
   {
@@ -97,7 +105,7 @@ export const SERVICES: Service[] = [
     description:
       "Conceção e remodelação completa de cozinhas contemporâneas: marcenaria à medida, bancadas de quartzo e pedra natural, e equipamentos embutidos.",
     features: ["Mobiliário por medida em madeira nobre", "Bancadas em quartzo e pedra natural", "Revestimentos cerâmicos artesanais", "Instalação de equipamentos e iluminação integrada"],
-    image: "/images/real/obra-7.png",
+    image: getAssetPath("/images/real/obra-7.png"),
     alt: "Cozinha moderna remodelada com bancada de quartzo branca, azulejos artesanais e armários em carvalho",
   },
   {
@@ -107,7 +115,7 @@ export const SERVICES: Service[] = [
     description:
       "Intervenções especializadas em canalização predial e pichelaria tradicional do Porto. Renovação de redes de água quente, esgotos e louças de design.",
     features: ["Substituição de canalizações antigas", "Instalação de louças suspensas e torneiras", "Sistemas de escoamento e sifões", "Testes de estanquidade sob pressão"],
-    image: "/images/real/obra-6.png",
+    image: getAssetPath("/images/real/obra-6.png"),
     alt: "Profissional técnico qualificado da Brasporto em intervenção no Porto",
   },
   {
@@ -117,7 +125,7 @@ export const SERVICES: Service[] = [
     description:
       "Renovação completa de quadros elétricos, redes estruturadas e iluminação arquitetónica LED linear que valoriza cada plano espacial.",
     features: ["Quadros elétricos em conformidade técnica", "Iluminação arquitetónica indireta e sancas LED", "Aparelhagem moderna e domótica básica", "Certificação e ensaios de segurança"],
-    image: "/images/real/obra-3.png",
+    image: getAssetPath("/images/real/obra-3.png"),
     alt: "Obras estruturais e infraestruturas técnicas em moradia no Porto",
   },
   {
@@ -127,7 +135,7 @@ export const SERVICES: Service[] = [
     description:
       "Reabilitação de coberturas tradicionais, substituição de telhas cerâmicas, rufos, chaminés e carpintaria estrutural com madeiras tratadas.",
     features: ["Substituição de telha cerâmica e isolamento", "Recuperação de asnas e travejamento em madeira", "Rufos, algerozes e impermeabilização", "Remoção de infiltrações persistentes"],
-    image: "/images/real/obra-1.png",
+    image: getAssetPath("/images/real/obra-1.png"),
     alt: "Restauro integral de telhado cerâmico tradicional no Porto com chaminé e condutas renovadas",
   },
 ];
@@ -140,7 +148,7 @@ export const REAL_WORKS: ProjectItem[] = [
     location: "Porto",
     description:
       "Bancada em quartzo maciço, marcenaria em carvalho natural com móveis inferiores brancos sem puxador, torneira monocomando preta e azulejos artesanais verdes vidrados.",
-    image: "/images/real/obra-7.png",
+    image: getAssetPath("/images/real/obra-7.png"),
     isRealWork: true,
   },
   {
@@ -150,7 +158,7 @@ export const REAL_WORKS: ProjectItem[] = [
     location: "Porto",
     description:
       "Recuperação de soalho maciço em madeira clara, divisória vertical em vidro fosco estruturado para privacidade elegante da cozinha e acabamentos em branco acetinado.",
-    image: "/images/real/obra-4.png",
+    image: getAssetPath("/images/real/obra-4.png"),
     isRealWork: true,
   },
   {
@@ -160,7 +168,7 @@ export const REAL_WORKS: ProjectItem[] = [
     location: "Porto",
     description:
       "Nova armação de cobertura em vigamento maciço de madeira aparelhada sobre paredes mestras tradicionais em pedra de granito, com divisão de compartimentos interiores.",
-    image: "/images/real/obra-3.png",
+    image: getAssetPath("/images/real/obra-3.png"),
     isRealWork: true,
   },
   {
@@ -170,7 +178,7 @@ export const REAL_WORKS: ProjectItem[] = [
     location: "Porto",
     description:
       "Substituição integral da cobertura com telhas cerâmicas de alta densidade, remate estanque de chaminés, caleiras metálicas e condutas de ventilação.",
-    image: "/images/real/obra-1.png",
+    image: getAssetPath("/images/real/obra-1.png"),
     isRealWork: true,
   },
   {
@@ -180,7 +188,7 @@ export const REAL_WORKS: ProjectItem[] = [
     location: "Porto",
     description:
       "Proteção meticulosa de pavimentos originais durante processo de regularização de paredes, remoção de imperfeições e preparação para lacagem e pintura premium.",
-    image: "/images/real/obra-2.png",
+    image: getAssetPath("/images/real/obra-2.png"),
     isRealWork: true,
   },
 ];
@@ -192,12 +200,12 @@ export const BEFORE_AFTER = {
   before: {
     label: "Antes da Intervenção",
     description: "Espaço desatualizado, iluminação insuficiente e acabamentos degradados pelo tempo.",
-    image: "/images/editorial/editorial-12.png",
+    image: getAssetPath("/images/editorial/editorial-12.png"),
   },
   after: {
     label: "Após Remodelação",
     description: "Ambiente renovado com luminosidade natural, materiais nobres e harmonia funcional.",
-    image: "/images/editorial/editorial-2.png",
+    image: getAssetPath("/images/editorial/editorial-2.png"),
   },
 };
 

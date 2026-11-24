@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+import { getAssetPath } from "@/lib/data";
 import { ArrowUpRight, Star, ChevronDown, CheckCircle2 } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -132,7 +133,7 @@ export function Hero() {
         className="absolute inset-0 z-0 pointer-events-none will-change-transform"
       >
         <Image
-          src="/images/editorial/editorial-11.png"
+          src={getAssetPath("/images/editorial/editorial-11.png")}
           alt="Interior contemporâneo no Porto remodelado com chão em madeira e luz natural"
           fill
           priority
